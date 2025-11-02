@@ -1,0 +1,19 @@
+import 'package:social_media_app_firebase/features/post/domain/entities/post.dart';
+
+abstract class PostState{}
+
+class PostsInitial extends PostState {}
+
+class PostsLoading extends PostState {}
+
+class PostsUpLoading extends PostState {}
+
+class PostsError extends PostState {
+  final String message;
+  PostsError(this.message);
+}
+
+class PostsLoaded extends PostState {
+  final List<Post> posts;
+  PostsLoaded(this.posts);
+}
