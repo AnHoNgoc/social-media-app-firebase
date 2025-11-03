@@ -19,8 +19,6 @@ import 'features/chat/presentation/cubits/chat_cubit.dart';
 import 'features/search/presentation/cubit/search_cubit.dart';
 import 'firebase_options.dart';
 
-
-
 final RouteObserver<ModalRoute> routeObserver = RouteObserver<ModalRoute>();
 
 Future<void> main() async {

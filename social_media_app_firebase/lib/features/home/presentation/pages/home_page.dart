@@ -76,6 +76,7 @@ class _HomePageState extends State<HomePage> {
             }
             return ListView.builder(
               key: PageStorageKey('allPostList'),
+              itemCount: allPost.length,
               itemBuilder: (context, index) {
                 final post = allPost[index];
                 return PostTile(
